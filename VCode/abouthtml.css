@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+.menu-bar{
+    background-color: #076c91;
+    text-align: center;
+
+}
+.menu-bar ul{
+    display: inline-flex;
+    color: white;
+    list-style: none;
+}
+.menu-bar ul li{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover{
+    background-color: #0a9dd4;
+    border-radius: 3px;
+}
+.submenu1{
+    display: none;
+}
+.menu-bar ul li:hover .submenu1{
+    display: block;
+    position: absolute;
+    background-color:  #076c91;
+    color: white;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.menu-bar ul li:hover .submenu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .submenu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .submenu1 ul li:last-child{
+    border:none;
+}
+.menu-bar ul li:hover .submenu1 ul li a:hover{
+    cursor: pointer;
+    color: yellow;
+}
+.submenu2{
+    display: none;
+}
+.menu-bar ul li:hover .submenu2{
+    display: block;
+    position: absolute;
+    background-color:  #076c91;
+    color: white;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.menu-bar ul li:hover .submenu2 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .submenu2 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .submenu2 ul li:last-child{
+    border:none;
+}
+.menu-bar ul li:hover .submenu2 ul li a:hover{
+    cursor: pointer;
+    color: yellow;
+}
+body{
+    background-color: #0a9dd4;
+}
+h1{
+    color: white;
+}
+.instr{
+    background-color: #076c91 ;
+    border-radius: 10px;
+    width: 75%;
+    align-items: center;
+    margin: auto;
+    line-height: 2em;
+    font-weight: bolder;
+    padding: 2.5%;
+  }
+
+.instr::after {
+    content: "";
+  display: table;
+  clear: both;
+}
+.videos{
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+}
+
+.java-button{
+    background-color: #0a9dd4;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: larger;
+    margin-left: 67.5%;
+  }
+  a{
+      text-decoration: none;
+  }
+  a:visited{
+    color: white;
+}
+  a:hover{
+    cursor: pointer;
+    color: yellow;
+  }
+
+
+.footer{
+
+    background-color: #076c91;
+    text-align: center;
+    height: 50px;
+}
+.marquee{
+    -moz-transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 20s linear infinite;
+}
